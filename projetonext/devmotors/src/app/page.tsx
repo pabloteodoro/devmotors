@@ -3,7 +3,7 @@ import { getDataHome } from '@/utils/actions/get-data'
 import { HomeProps } from '@/utils/actions/home.type'
 import { Hero } from '@/components/hero'
 import { Phone } from 'lucide-react'
-
+import { Services } from "@/components/home/services";
 
 export default async function Home() {
   const { object }: HomeProps = await getDataHome();
@@ -22,6 +22,7 @@ export default async function Home() {
       
       
       />
+      <Services/>
     </main>
   );
 }
