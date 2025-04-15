@@ -18,7 +18,7 @@ export function Footer({ object }: HomeProps){
             </div>
           </div>
 
-          <div className={styles.item}>
+          <div className={styles.item}> 
             <Phone size={28} color="#FFF" />
             <div>
               <strong>Telefone</strong>
@@ -45,6 +45,12 @@ export function Footer({ object }: HomeProps){
         </div>
 
       </section>
+
+      <a href={object.metadata.cta_button.url} target='_blank' className={styles.link}> <Phone size={24} color="#FFF" /> {object.metadata.cta_button.title}</a>
+
+      <p className={styles.copyText}>
+        Todos os Direitos Reservados por Pablo Teodoro - {`${new Date().getFullYear()}`} - Oficina do seu Zé
+      </p>
     </footer>
   )
 }
