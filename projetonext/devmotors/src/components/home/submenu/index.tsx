@@ -48,19 +48,14 @@ useEffect(() => {
                     </button>
                 )}
 
-
-
-                <li>
-                    <Link href="/post/pagina-1">
-                    Pagina 1
+               {menu.objects.map( item => (
+                    <li>
+                    <Link href={`/post/${item.slug}`}>
+                    {item.title}
                     </Link>
-                    
-                </li>
-                <li>
-                <Link href="/post/pagina-2">
-                    Pagina 2
-                    </Link>
-                </li>
+                    </li>
+               ))}
+                 
             </ul>
         </section>
     )
