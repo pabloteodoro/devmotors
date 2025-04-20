@@ -29,7 +29,7 @@ export function Header() {
 
             <div className={styles.contentLogo}>
                 <Link href="/">
-                    Dev Motors
+                    Oficina do seu Zé
                 </Link>
 
             </div>

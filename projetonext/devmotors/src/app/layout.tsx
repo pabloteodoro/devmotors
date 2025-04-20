@@ -14,8 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevMotors - Oficina de Carros",
-  description: "Oficina de Carros",
+  title: "Oficina do seu Zé - Sua Oficina Especializada!",
+  description: "Oficina em São Paulo, especializada em serviços automotivos de qualidade.",
+  keywords: ["oficina", "ofiicina carros", "carros", "manutenção de carros"],
+  openGraph: {
+    title: "Oficina do seu Zé - Sua Oficina Especializada!",
+    images: [$]
+  }
 };
 
 export default function RootLayout({
@@ -28,6 +33,9 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header/>
         {children}
+        <p style={{ textAlign: "center", marginTop: 54 }}>
+        Todos os Direitos Reservados por Pablo Teodoro @ {`${new Date().getFullYear()}`} -  Oficina do seu Zé
+      </p>
       </body>
     </html>
   );
