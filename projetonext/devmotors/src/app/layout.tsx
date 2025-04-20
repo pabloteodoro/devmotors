@@ -19,7 +19,17 @@ export const metadata: Metadata = {
   keywords: ["oficina", "ofiicina carros", "carros", "manutenção de carros"],
   openGraph: {
     title: "Oficina do seu Zé - Sua Oficina Especializada!",
-    images: [$]
+    images: [`${process.env.NEXT_PUBLIC_URL}/logo.jpg`]
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    }
   }
 };
 

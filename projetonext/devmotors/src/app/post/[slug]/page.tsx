@@ -5,8 +5,46 @@ import { PostProps } from '@/utils/actions/post.type'
 import { Phone } from 'lucide-react'
 import { Container } from '@/components/container'
 import Image from 'next/image'
+import { Metadata } from 'next'
 
+export async function generateMetadata({ params: { slug }}: {
+    params: { slug: string }
+}): Promise<Metadata> {
+    try {
+        const { objects }: PostProps = await getItemBySlug(slug)
+        .catch (() => {
+            return {
+                title: 'Oficina do seu Zé - Sua Oficina Especializada!',
+                description: 'Oficina em São Paulo, especializada em serviços automotivos de qualidade.',
+            }
+        })
 
+        return {
+            title: `Oficina do seu Zé - ${objects[0].title}`,
+            description: `${objects[0].metadata.description.text}`,
+            keywords: ['oficina', 'ofiicina carros', 'carros', 'manutenção de carros'],
+            openGraph: {
+                title: `Oficina do seu Zé - ${objects[0].title}`,
+                images: [objects[0].metadata.banner.url]
+        },
+            robots: {
+                index: true,
+                follow: true,
+                nocache: true,
+                googleBot: {
+                    index: true,
+                    follow: true,
+                    noimageindex: true,
+                }
+            }
+        }
+    } catch (err) {
+        return {
+            title: 'Oficina do seu Zé - Sua Oficina Especializada!',
+            description: 'Oficina em São Paulo, especializada em serviços automotivos de qualidade.',
+        }
+    }
+}
 
 export default async function Page({params: {slug}}: {
     params: {slug : string}
