@@ -15,7 +15,7 @@ export async function getDataHome() {
 
     } catch(err) {
        
-        throw new Error("Failed to fetch data");
+        console.log(err);
     }
 }
 
