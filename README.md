@@ -1,10 +1,10 @@
-🚗 Dev Motors – Site Institucional com CMS
+## 🚗 Dev Motors – Site Institucional com CMS
 Dev Motors – Company Website with Headless CMS
 Dev Motors é um site institucional desenvolvido para uma oficina mecânica, com painel gerenciável via CMS Headless (CosmicJS). O projeto tem foco em performance, escalabilidade e fácil manutenção de conteúdo.
 
 Dev Motors is a company website developed for a car repair shop, featuring a manageable dashboard using a Headless CMS (CosmicJS). The project focuses on performance, scalability, and easy content management.
 
-📌 Funcionalidades | Features
+## 📌 Funcionalidades | Features
 Painel gerenciável via CosmicJS (CMS Headless)
 → Manageable dashboard via CosmicJS (Headless CMS)
 
@@ -17,7 +17,7 @@ Design responsivo e otimizado
 Estrutura escalável com boas práticas de desenvolvimento
 → Scalable structure with development best practices
 
-🛠️ Tecnologias Utilizadas | Technologies Used
+## 🛠️ Tecnologias Utilizadas | Technologies Used
 Next.js – Framework React para SSR e SSG
 → React framework for SSR and SSG
 
@@ -30,7 +30,7 @@ CosmicJS – CMS Headless para gerenciamento de conteúdo
 REST API – Comunicação entre frontend e CMS
 → Communication between frontend and CMS
 
-🚀 Como executar o projeto | Getting Started
+## 🚀 Como executar o projeto | Getting Started
 Clone o repositório | Clone the repository:
 
 bash
@@ -59,7 +59,7 @@ Editar
 npm run dev
 Acesse | Visit: 
 
-📂 Estrutura do Projeto | Project Structure
+## 📂 Estrutura do Projeto | Project Structure
 bash
 Copiar
 Editar
@@ -68,21 +68,16 @@ Editar
 /services       → Configuração de API | API setup  
 /styles         → Estilização global e modular | Global and modular styles  
 
-📸 Preview
-![Preview do site]
 
 ## 📸 Preview
 
 
-
-![Preview do site] 
-
-(./assets/preview.png)
+![Pagina Home](assets/preview.png)
 
 
 
 
-📄 Licença | License
+## 📄 Licença | License
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 This project is licensed under the MIT license. See the LICENSE file for details.
