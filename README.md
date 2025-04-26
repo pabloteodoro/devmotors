@@ -75,7 +75,10 @@ Editar
 
 
 
-(./public/preview.png)
+![Preview do site] 
+
+(./assets/preview.png)
+
 
 
 
