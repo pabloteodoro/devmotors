@@ -1,8 +1,8 @@
-## 🚗 Dev Motors – Site Institucional com CMS
-Dev Motors – Company Website with Headless CMS
-Dev Motors é um site institucional desenvolvido para uma oficina mecânica, com painel gerenciável via CMS Headless (CosmicJS). O projeto tem foco em performance, escalabilidade e fácil manutenção de conteúdo.
+## 🚗 Oficina do seu Zé – Site Institucional com CMS
+Oficina do seu Zé – Company Website with Headless CMS
+Oficina do seu Zé é um site institucional desenvolvido para uma oficina mecânica, com painel gerenciável via CMS Headless (CosmicJS). O projeto tem foco em performance, escalabilidade e fácil manutenção de conteúdo.
 
-Dev Motors is a company website developed for a car repair shop, featuring a manageable dashboard using a Headless CMS (CosmicJS). The project focuses on performance, scalability, and easy content management.
+  Oficina do seu Zé is a company website developed for a car repair shop, featuring a manageable dashboard using a Headless CMS (CosmicJS). The project focuses on performance, scalability, and easy content management.
 
 ## 📌 Funcionalidades | Features
 Painel gerenciável via CosmicJS (CMS Headless)
